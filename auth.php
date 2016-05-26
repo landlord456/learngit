@@ -17,7 +17,7 @@ class Auth extends CI_Controller {
 		$this->load->library('redis');
 		$this->load->library('session');
 		
-		//$url = $this->input->post('url');
+		$url = $this->input->post('url');
 		$token = $this->input->post('token');
 		$key = $this->redis->get('tmpkey');
 		
