@@ -6,9 +6,9 @@ class Auth extends CI_Controller {
 	}
 	
 	public function token(){
-//		$url = $this->input->get('url');
-//		
-//		$this->smarty->assign('url', $url);
+		$url = $this->input->get('url');
+		
+		$this->smarty->assign('url', $url);
 		$this->smarty->display('login.html');
 	}
 	
